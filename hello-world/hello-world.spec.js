@@ -7,4 +7,8 @@ describe('Hello World', function () {
   	const expected = 'Hello, World!';
     expect(helloWorld.hello()).toEqual(expected);
   });
+  it('says hello world', function () {
+  	const expected = 13;
+    expect(helloWorld.hello()).toEqual(expected);
+  });
 });

@@ -1,7 +1,8 @@
 function HelloWorld(){
     this.hello=function(){
         var str = new String( "Hello, World!" );
-        return str.length;
+        var char=str.length;
+        return char;
     }
 }
 module.exports=HelloWorld;

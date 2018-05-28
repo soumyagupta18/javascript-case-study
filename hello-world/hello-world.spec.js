@@ -7,7 +7,7 @@ describe('Hello World', function () {
   	const expected = 'Hello, World!';
     expect(helloWorld.hello()).toEqual(expected);
   });
-  it('says hello world', function () {
+  it('should have 13 characters', function () {
   	const expected = 13;
     expect(helloWorld.hello()).toEqual(expected);
   });

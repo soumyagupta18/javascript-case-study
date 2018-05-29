@@ -6,17 +6,17 @@ describe('PhoneNumber()', function () {
     expect(phone.number()).toEqual('2234567890');
   });
 
-  it('cleans numbers with dots', function () {
+  xit('cleans numbers with dots', function () {
     var phone = new PhoneNumber('223.456.7890');
     expect(phone.number()).toEqual('2234567890');
   });
 
-  it('cleans numbers with multiple spaces', function () {
+  xit('cleans numbers with multiple spaces', function () {
     var phone = new PhoneNumber('223 456   7890   ');
     expect(phone.number()).toEqual('2234567890');
   });
 
-  it('invalid when 9 digits', function () {
+  xit('invalid when 9 digits', function () {
     var phone = new PhoneNumber('123456789');
     expect(phone.number()).toEqual(null);
   });

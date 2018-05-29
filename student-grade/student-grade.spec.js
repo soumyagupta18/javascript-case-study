@@ -11,7 +11,7 @@ describe('School', function () {
     expect(school.roster()).toEqual({});
   });
 
-  xit('adding a student adds them to the roster for the given grade', function () {
+  it('adding a student adds them to the roster for the given grade', function () {
     school.add('Aamir', 2);
     var expectedDb = { 2: [ 'Aamir' ] };
     expect(school.roster()).toEqual(expectedDb);
@@ -20,8 +20,9 @@ describe('School', function () {
   xit('adding more students to the same grade adds them to the roster', function () {
     school.add('Bhavana', 2);
     school.add('James', 2);
-    school.add('Pari', 2);
+    school.add('Pari', 3);
     var expectedDb = { 2: [ 'Bhavana', 'James', 'Pari' ] };
+    
     expect(school.roster()).toEqual(expectedDb);
   });
 
@@ -36,15 +37,15 @@ describe('School', function () {
     school.add('Faizan', 5);
     school.add('Tanveer', 5);
     school.add('Sapna', 1);
-    var expectedStudents = [ 'Tanveer', 'Faizan' ];
+    var expectedStudents = [ 'Faizan', 'Tanveer'];
     expect(school.grade(5)).toEqual(expectedStudents);
   });
 
-  xit('grade returns an empty array if there are no students in that grade', function () {
+  it('grade returns an empty array if there are no students in that grade', function () {
     expect(school.grade(1)).toEqual([]);
   });
 
-  xit('the students names in each grade in the roster are sorted', function () {
+  fit('the students names in each grade in the roster are sorted', function () {
     school.add('Jennifer', 4);
     school.add('Kareem', 6);
     school.add('Christopher', 4);

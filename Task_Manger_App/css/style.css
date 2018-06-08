@@ -1,0 +1,53 @@
+.content{
+    width:100%;
+   
+}
+.heading{
+    text-align: center
+}
+ul{    
+    padding-left:0pt;
+    margin:0px;
+    /*border:1px solid grey;*/
+    text-align: center;
+    width:400px;
+    margin-left: 415pt;
+    list-style-type: none;
+  
+}
+ul :hover #i3{
+    background-color: quamarine;
+    opacity:100;
+    
+}
+
+ul li{
+    font-size: 15pt;
+    margin-left:0pt;
+    
+}
+ul li:nth-child(2n){
+    background-color:#ECF0F1;
+}
+.taskComplete{
+    color: green;
+}
+.taskIncomplete{
+    color: red;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#4da6ff;
+    color: black;
+    text-align: center;
+}
+.button{
+    padding-top:10px;
+}
+
+.filter{
+    margin-top: 10px;
+}
